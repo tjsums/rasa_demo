@@ -1,0 +1,115 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - 你好
+      - 您好
+      - 在吗
+
+  - intent: goodbye
+    examples: |
+      - 拜拜
+      - 再见
+      - 退出
+      - 结束
+      - good bye
+      - bye
+      - goodbye
+      - see you later
+
+  - intent: medicine
+    examples: |
+      - [感冒](disease)了，该吃什么药？
+      - 我[便秘](disease)了，该吃什么药？
+      - 我[胃痛](disease)，该吃什么药？
+
+  - intent: medical_department
+    examples: |
+      - [感冒](disease)了，该去哪个科室看病？
+      - 我[便秘](disease)了，该去挂哪个科室的号？
+
+  - intent: medical_hospital
+    examples: |
+      - 我生病了，不知道去哪里看病。
+      - [減肥](disease)，有什么好的医院或健康中心推荐吗？
+
+  - intent: query_time
+    examples: |
+      - 现在几点了
+      - 现在几点
+
+  - intent: query_date
+    examples: |
+      - [今天](date)几号？
+      - [今天](date)是几号？
+      - [今天](date)的日期？
+      - [昨天](date)是几号？
+      - [明天](date)是几号？
+      - 几号？
+
+  - intent: faq/notes
+    examples: |
+      - 应聘ACME校园招聘职位的注意事项?
+
+  - intent: faq/work_location
+    examples: |
+      - 校园招聘录取的应届生主要工作地点在哪里?
+
+  - intent: weather
+    examples: |
+      - 显示天气
+      - [上海](address)什么天气
+      - 我要[上海](address)[明天](date-time)的天气
+      - 我要[上海](address)[后天](date-time)的天气
+      - [北京](address)[今天](date-time)的天气如何
+
+  - intent: info_date
+    examples: |
+      - [明天](date-time)
+      - [后天](date-time)
+
+  - intent: info_address
+    examples: |
+      - 告诉我[广州](address)怎么样
+      - [广州](address)
+      - 那么[辽宁](address)呢
+      - [北京](address)啥情况
+
+  - intent: affirm
+    examples: |
+      - 是的
+
+  - intent: deny
+    examples: |
+      - 不行
+      - 没
+
+  - intent: stop
+    examples: |
+      - 停
+      - 停止
+
+  - synonym: 下个星期一
+    examples: |
+      - 下星期一
+  - synonym: 今天
+    examples: |
+      - 早上
+      - 中午
+      - 晚上
+      - 下午
+      - 傍晚
+      - 今日
+  - synonym: 明天
+    examples: |
+      - 明日
+  - synonym: 北京
+    examples: |
+      - 首都
+  - synonym: 上海
+    examples: |
+      - 魔都
