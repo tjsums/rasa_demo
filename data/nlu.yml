@@ -62,6 +62,7 @@ nlu:
   - intent: weather
     examples: |
       - 显示天气
+      - 天气怎么样？
       - [上海](address)什么天气
       - 我要[上海](address)[明天](date-time)的天气
       - 我要[上海](address)[后天](date-time)的天气
