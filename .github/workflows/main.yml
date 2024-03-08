@@ -1,3 +1,6 @@
+name: Rasa Train-Test Model GitHub Action
+uses: RasaHQ/rasa-train-test-gha@2.2.0
+on:[push]
 jobs:
   training-testing:
     name: Training and Testing
