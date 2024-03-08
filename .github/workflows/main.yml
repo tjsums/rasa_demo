@@ -3,7 +3,7 @@ on: [push]
 jobs:
   training-testing:
     name: Training and Testing
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v1
       - name: Rasa Train and Test GitHub Action
