@@ -4,7 +4,6 @@
 # -- (string) Override name of app
 nameOverride: ""
 
-
 # -- (string) Override the full qualified app name
 fullnameOverride: ""
 
