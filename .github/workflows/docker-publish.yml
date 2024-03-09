@@ -52,7 +52,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: 3686611
-          password: Stj!041124
+          password: eyJhbGciOiJSUzI1NiIsImtpZCI6IkI0N1U6NVRWTTpZRzRMOjdXVjU6QVJDUjoyR0lVOlFVSEM6UEM1UDpBQjVUOkpHN0w6QlY3QzpZTEtZIn0.eyJvd25lclVpbiI6IjM2ODY2MTEiLCJvcGVyYXRvclVpbiI6IjM2ODY2MTEiLCJ0b2tlbklkIjoiY25sc25jN3FvNzQ4aXA4ZGNjdmciLCJleHAiOjIwMjUzMTE5MjAsIm5iZiI6MTcwOTk1MTkyMCwiaWF0IjoxNzA5OTUxOTIwfQ.XXsMjqdz1nDTQrYo_KsjbEzShOORngkbc7hYB5o-bdKvthr4XxDaNWxDIHGoxMQe9zXq8_BrKzryG6m94bOUbTQ9RTuaYNDyqeBcVlx2-i4ytRgNIXUTSqlzc5bQJrHUmj8elhE0EHmpokMJFD6wA9bBsQkhjcloF2nqQBy2aamvGpQR-b9Ny3x4DCDOu0b36rYAxWibTOZzeCqJzsnaWUKCDq-aOzZUw8IayQv_B-RDGcv6FqKa_iCFVbaj254WsWmT5ieu36QTZ6X9ifHraof6HGHpSE8COC_w3fq4cRWcF6Biyk3vGHTCps4EYQ_EzgE5aVwvoW4piJvsSZ1VMA
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
