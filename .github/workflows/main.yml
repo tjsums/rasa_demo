@@ -1,5 +1,6 @@
 name: Rasa Train-Test Model GitHub Action
-on: [push]
+on:
+  workflow_dispatch:
 jobs:
   training-testing:
     name: Training and Testing
