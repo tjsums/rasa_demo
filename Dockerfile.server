@@ -1,0 +1,6 @@
+FROM rasa/rasa:3.6.19
+
+USER root
+RUN pip install transformers
+
+USER 1001

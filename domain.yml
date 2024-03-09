@@ -15,6 +15,8 @@ intents:
   - affirm
   - info_date
   - info_address
+  - query_knowledge_base:
+      use_entities: []
 
 
 entities:
@@ -22,6 +24,11 @@ entities:
   - disease
   - address
   - date-time
+  - object_type
+  - song
+  - singer
+  - gender
+  - mention
 
 slots:
   date:
@@ -42,6 +49,26 @@ slots:
     mappings:
       - entity: date-time
         type: from_entity
+  mention:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: mention
+  object_type:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: object_type
+  singer:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: singer
+  song:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: song
 
 responses:
   utter_greet:
@@ -77,6 +104,7 @@ actions:
   - action_query_date
   - respond_faq
   - action_weather_form_submit
+  - action_response_query
 
 forms:
   weather_form:

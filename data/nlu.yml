@@ -114,3 +114,41 @@ nlu:
   - synonym: 上海
     examples: |
       - 魔都
+
+  - intent: query_knowledge_base
+    examples: |
+      - 有什么好听的[歌曲](object_type)？
+      - 有什么唱歌好听的[歌手](object_type)？
+      - 给我列一些[歌曲](object_type)
+      - 给我列一些[歌手](object_type)
+      - 给我列一些[男](gender)[歌手](object_type)
+      - 给我列一些[男](gender)的[歌手](object_type)
+      - 给我列一些[女](gender)[歌手](object_type)
+      - 给我列一些[女](gender)的[歌手](object_type)
+      - 给我列一些[男性](gender)[歌手](object_type)
+      - 给我列一些[女性](gender)[歌手](object_type)
+      - 给我[男性](gender)[歌手](object_type)
+      - 给我[女性](gender)[歌手](object_type)
+      - 给我列出一些[周杰伦](singer)的[歌曲](object_type)
+      - 给我列出[周杰伦](singer)的[歌曲](object_type)
+      - 给我列出[周杰伦](singer)唱的[歌曲](object_type)
+      - 列出[周杰伦](singer)的[歌曲](object_type)
+      - 给我列[周杰伦](singer)的[歌曲](object_type)
+      - [林俊杰](singer)都有什么[歌曲](object_type)
+      - [林俊杰](singer)有什么[歌曲](object_type)
+      - [刚才那首](mention)属于什么[专辑](attribute)
+      - [刚才那首](mention)是[谁](attribute)唱的
+      - [刚才那首](mention)的[歌手](attribute)是谁
+      - [那首歌](mention)属于什么[风格](attribute)？
+      - [最后一个](mention)属于什么[风格](attribute)？
+      - [第一个](mention)属于什么[专辑](attribute)？
+      - [第一个](mention)的[专辑](attribute)
+      - [第一个](mention)是[谁](attribute)唱的？
+      - [最后一个](mention)是[哪个](attribute)唱的？
+      - [舞娘](song)是[哪个歌手](attribute)唱的？
+      - [晴天](song)这首歌属于什么[专辑](attribute)？
+      - [晴天](song)的[专辑](attribute)？
+      - [江南](song)属于什么[专辑](attribute)？
+      - [江南](song)在什么[专辑](attribute)里面？
+      - [第一个](mention)人的[生日](attribute)
+      - [周杰伦](singer)的[生日](attribute)

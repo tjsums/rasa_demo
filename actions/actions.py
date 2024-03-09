@@ -29,6 +29,8 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.knowledge_base.storage import InMemoryKnowledgeBase
+from rasa_sdk.knowledge_base.actions import ActionQueryKnowledgeBase
 
 
 def text_date_to_int(text_date):
@@ -84,3 +86,13 @@ class WeatherFormAction(Action):
         date_text = tracker.get_slot("date-time")
         dispatch.utter_message('Demo,暂不支持查询{}({})的天气'.format(city, date_text))
         return []
+
+
+class MyKnowledgeBaseAction(ActionQueryKnowledgeBase):
+    def name(self) -> Text:
+        return "action_response_query"
+
+    def __init__(self):
+        knowledge_base = InMemoryKnowledgeBase("data.json")
+        super().__init__(knowledge_base)
+
